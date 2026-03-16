@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kobo | Your Money, Smarter</title>
+    <meta
+      name="description"
+      content="AI financial coach for young Nigerian professionals. Predict your balance 14 days ahead. Never be broke before payday again."
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400,700&family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300..500;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="adire-bg"></div>
+
+    <nav id="mainNav">
+      <a href="#" class="logo-group">
+        <div class="logo-emblem"><span class="logo-naira">₦</span></div>
+        <span class="logo-wordmark">Kobo</span>
+      </a>
+      <div class="nav-center">
+        <a href="#features">Features</a>
+        <a href="#demo">Live Demo</a>
+        <a href="#how">How It Works</a>
+        <a href="#waitlist">Early Access</a>
+      </div>
+      <div class="nav-right">
+        <a href="#" class="btn-ghost">Sign in</a>
+        <a href="#waitlist" class="btn-kola">Join Waitlist</a>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-left reveal">
+          <div class="hero-tag">
+            <div class="tag-dot"></div>
+            AI Financial Coach | Lagos
+          </div>
+          <h1>
+            Your money,<br /><span class="kola-word">smarter.</span><br /><span
+              class="accent-line"
+              >No more gbese days.</span
+            >
+          </h1>
+          <p class="hero-sub">
+            Kobo predicts your balance <strong>14 days ahead</strong>, nudges
+            you before you overspend, and turns your salary into something that
+            actually lasts.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="#waitlist" class="btn-primary-hero">Get Early Access →</a>
+            <a href="#demo" class="btn-link-hero">Try the AI coach ↓</a>
+          </div>
+
+          <div class="hero-proof">
+            <div class="proof-faces">
+              <div class="face f1">AO</div>
+              <div class="face f2">TN</div>
+              <div class="face f3">KC</div>
+              <div class="face f4">FS</div>
+              <div class="face f5">ZA</div>
+            </div>
+            <div class="proof-text">
+              <strong>2,400+ Nigerians on the waitlist</strong>
+              Lagos · Abuja · Port Harcourt · Accra
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="phone-scene">
+            <div class="f-card fc1">
+              <div class="fc-eyebrow">14-day forecast</div>
+              <div class="fc-big">₦91,400</div>
+              <div class="fc-sub">Predicted on the 28th</div>
+              <div style="margin-top: 0.5rem">
+                <span class="fc-pill">▲ On track</span>
+              </div>
+            </div>
+
+            <div class="f-card fc2">
+              <div class="fc-eyebrow">Smart nudge</div>
+              <div
+                style="
+                  font-size: 0.72rem;
+                  color: var(--kola-pale);
+                  line-height: 1.5;
+                  margin-top: 0.2rem;
+                "
+              >
+                Payday detected 🎉<br />Auto-save ₦45k now?
+              </div>
+              <div style="margin-top: 0.6rem; display: flex; gap: 0.4rem">
+                <div
+                  style="
+                    background: var(--naira);
+                    color: var(--naira-pale);
+                    font-size: 0.6rem;
+                    font-weight: 600;
+                    padding: 0.25rem 0.6rem;
+                    border-radius: 6px;
+                    cursor: pointer;
+                  "
+                >
+                  Yes, save
+                </div>
+                <div
+                  style="
+                    background: var(--elevated);
+                    color: var(--t3);
+                    font-size: 0.6rem;
+                    padding: 0.25rem 0.6rem;
+                    border-radius: 6px;
+                    cursor: pointer;
+                  "
+                >
+                  Later
+                </div>
+              </div>
+            </div>
+
+            <div class="phone-shell">
+              <div class="phone-face">
+                <div class="ph-pill"><div class="ph-pill-bar"></div></div>
+                <div class="ph-body">
+                  <div class="ph-greeting">Good morning ☀️</div>
+                  <div class="ph-name">Adaeze O.</div>
+                  <div class="ph-balance-card">
+                    <div class="ph-bal-label">Balance</div>
+                    <div class="ph-bal-amount">₦148,200</div>
+                    <div class="ph-bal-sub">
+                      Safe to spend: <span>₦41,000</span>
+                    </div>
+                  </div>
+
+                  <div class="ph-forecast">
+                    <div class="ph-fc-row">
+                      <span class="ph-fc-label">Food (week)</span>
+                      <span class="ph-fc-val">₦8,200 / ₦15k</span>
+                    </div>
+                    <div class="ph-bar-track">
+                      <div class="ph-bar-fill" style="width: 55%"></div>
+                    </div>
+                  </div>
+                  <div class="ph-nudge">
+                    <div class="nudge-dot">⚡</div>
+                    <div>
+                      Netflix renews tomorrow — ₦4,400. You'll have ₦143,800
+                      after.
+                    </div>
+                  </div>
+                  <div class="ph-chat-row">
+                    <div class="ph-msg bot">
+                      Can I afford dinner out tonight?
+                    </div>
+                    <div class="ph-msg user">
+                      Safe: ₦3,400. Keep it under ₦2,500? 🍽️
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee-section clear-section">
+      <div class="marquee-track">
+        <span class="marquee-item"
+          ><span class="m-sep">◆</span> 14-day cash flow forecasting</span
+        >
+        <span class="marquee-item"
+          ><span class="m-sep">◆</span> Pidgin-friendly AI coach</span
+        >
+        <span class="marquee-item"
+          ><span class="m-sep">◆</span> Predictive nudges</span
+        >
+        <span class="marquee-item"
+          ><span class="m-sep">◆</span> Payday auto-save</span
+        >
+        <span class="marquee-item"
+          ><span class="m-sep">◆</span> GTBank · UBA · Zenith · Access</span
+        >
+        <span class="marquee-item"
+          ><span class="m-sep">◆</span> Black tax tracking</span
+        >
+        <span class="marquee-item"
+          ><span class="m-sep">◆</span> Goal-based micro-saving</span
+        >
+        <span class="marquee-item"
+          ><span class="m-sep">◆</span> Debt intelligence</span
+        >
+        <span class="marquee-item"
+          ><span class="m-sep">◆</span> 85%+ forecast accuracy</span
+        >
+        <span class="marquee-item"
+          ><span class="m-sep">◆</span> SMS bank parsing</span
+        >
+
+        <span class="marquee-item"
+          ><span class="m-sep">◆</span> 14-day cash flow forecasting</span
+        >
+        <span class="marquee-item"
+          ><span class="m-sep">◆</span> Pidgin-friendly AI coach</span
+        >
+        <span class="marquee-item"
+          ><span class="m-sep">◆</span> Predictive nudges</span
+        >
+        <span class="marquee-item"
+          ><span class="m-sep">◆</span> Payday auto-save</span
+        >
+        <span class="marquee-item"
+          ><span class="m-sep">◆</span> GTBank · UBA · Zenith · Access</span
+        >
+        <span class="marquee-item"
+          ><span class="m-sep">◆</span> Black tax tracking</span
+        >
+        <span class="marquee-item"
+          ><span class="m-sep">◆</span> Goal-based micro-saving</span
+        >
+        <span class="marquee-item"
+          ><span class="m-sep">◆</span> Debt intelligence</span
+        >
+        <span class="marquee-item"
+          ><span class="m-sep">◆</span> 85%+ forecast accuracy</span
+        >
+        <span class="marquee-item"
+          ><span class="m-sep">◆</span> SMS bank parsing</span
+        >
+      </div>
+    </div>
+
+    <section class="problem-section clear-section" id="problem">
+      <div class="container">
+        <div class="problem-grid">
+          <div class="reveal">
+            <div class="section-kicker">The problem</div>
+            <h2>
+              You earn well.<br />But money <em>disappears</em><br />before
+              month-end.
+            </h2>
+            <ul class="pain-list">
+              <li class="pain-item">
+                <div class="pain-num">01</div>
+                <div class="pain-copy">
+                  <h4>The salary week trap</h4>
+                  <p>
+                    Great lifestyle week 1. Rationing data week 4. Every single
+                    month — no matter how much you earn.
+                  </p>
+                </div>
+              </li>
+              <li class="pain-item">
+                <div class="pain-num">02</div>
+                <div class="pain-copy">
+                  <h4>Multiple streams, zero clarity</h4>
+                  <p>
+                    9-5 + side hustle + freelance + family support = money
+                    everywhere, clarity nowhere.
+                  </p>
+                </div>
+              </li>
+              <li class="pain-item">
+                <div class="pain-num">03</div>
+                <div class="pain-copy">
+                  <h4>Invisible obligations</h4>
+                  <p>
+                    Netflix, DSTV, esusu, aso-ebi, "bro I need small help" —
+                    ₦40k a month you never planned for.
+                  </p>
+                </div>
+              </li>
+              <li class="pain-item">
+                <div class="pain-num">04</div>
+                <div class="pain-copy">
+                  <h4>Apps that only look backward</h4>
+                  <p>
+                    PiggyVest, Kuda, your Excel sheet — they show what happened.
+                    Kobo shows what's coming.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="reveal" style="transition-delay: 0.15s">
+            <div class="quote-card">
+              <span class="quote-mark">"</span>
+              <p class="quote-text">
+                I earn ₦450k a month and somehow I'm always borrowing ₦5k by the
+                25th. I genuinely didn't know where it was going.
+              </p>
+              <div class="quote-person">
+                <div class="qp-av">👩🏾</div>
+                <div>
+                  <div class="qp-name">Adaeze, 29</div>
+                  <div class="qp-role">Product Manager, Lagos</div>
+                </div>
+              </div>
+            </div>
+            <div class="stats-row reveal" style="transition-delay: 0.3s">
+              <div class="stat-cell">
+                <div class="stat-n">78<span>%</span></div>
+                <div class="stat-label">
+                  of Nigerian professionals run out before payday
+                </div>
+              </div>
+              <div class="stat-cell">
+                <div class="stat-n">₦40<span>k</span></div>
+                <div class="stat-label">
+                  avg. monthly spend on unplanned obligations
+                </div>
+              </div>
+              <div class="stat-cell">
+                <div class="stat-n">5<span>d</span></div>
+                <div class="stat-label">
+                  avg. "stranded" days before next payday
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="demo-section clear-section" id="demo">
+      <div class="demo-header reveal">
+        <div class="section-kicker">Live Demo — Powered by Claude AI</div>
+        <h2>Talk to your <span class="green-em">Kobo coach.</span></h2>
+        <p class="section-body">
+          This is a real AI coach trained on Nigerian financial culture. Ask
+          about your budget, salary, subscriptions, savings goals — or just tell
+          it you're always broke before the 25th.
+        </p>
+      </div>
+
+      <div class="demo-grid">
+        <div class="chat-shell reveal">
+          <div class="chat-topbar">
+            <div class="chat-avatar">K</div>
+            <div class="chat-info">
+              <p>Kobo AI Coach</p>
+              <span
+                ><span class="chat-status-dot"></span>Online · Powered by
+                Claude</span
+              >
+            </div>
+          </div>
+
+          <div class="chat-messages" id="chatMsgs">
+            <div class="cmsg bot">
+              <div class="cmsg-who">Kobo</div>
+              <div class="cmsg-bub">
+                Hey! 👋 I'm your Kobo financial coach. I can help you plan your
+                budget, forecast your balance, tackle that "always broke before
+                payday" problem, or work toward any savings goal. What's on your
+                mind?
+              </div>
+            </div>
+          </div>
+
+          <div style="padding: 0 1.25rem 0.5rem">
+            <div class="typing-dots" id="typingDots">
+              <div class="td"></div>
+              <div class="td"></div>
+              <div class="td"></div>
+            </div>
+          </div>
+
+          <div class="chat-input-row">
+            <textarea
+              id="chatInput"
+              placeholder="Ask anything about your money…"
+              rows="1"
+            ></textarea>
+            <button class="send-btn" id="sendBtn" title="Send message">
+              ↑
+            </button>
+          </div>
+        </div>
+
+        <div class="reveal" style="transition-delay: 0.1s">
+          <div class="prompts-side">
+            <div class="prompts-label">Try asking</div>
+            <div class="pill-grid">
+              <button
+                class="prompt-pill"
+                onclick="
+                  usePrompt('I earn ₦350k/month — help me build a budget')
+                "
+              >
+                I earn ₦350k/month — help me build a budget
+              </button>
+              <button
+                class="prompt-pill"
+                onclick="usePrompt('Can I afford dinner out tonight?')"
+              >
+                Can I afford dinner out tonight?
+              </button>
+              <button
+                class="prompt-pill"
+                onclick="usePrompt('I always run out of money by the 25th 😩')"
+              >
+                I always run out of money by the 25th 😩
+              </button>
+              <button
+                class="prompt-pill"
+                onclick="usePrompt('How do I save for Detty December?')"
+              >
+                How do I save for Detty December?
+              </button>
+              <button
+                class="prompt-pill"
+                onclick="
+                  usePrompt(
+                    'What\'s a realistic emergency fund for someone in Lagos?',
+                  )
+                "
+              >
+                What's a realistic emergency fund for someone in Lagos?
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-section clear-section" id="how">
+      <div class="container">
+        <div class="how-inner">
+          <div class="reveal">
+            <div class="section-kicker">How it works</div>
+            <h2>
+              Reactive<br />to <span class="green-em">predictive</span><br />in
+              3 minutes.
+            </h2>
+            <p class="section-body" style="margin-top: 1.25rem">
+              Kobo learns your money patterns and gets ahead of problems —
+              before they become emergencies.
+            </p>
+
+            <div class="how-steps" style="margin-top: 3rem">
+              <div class="how-step">
+                <div class="step-line"></div>
+                <div class="step-circle">1</div>
+                <div class="step-content">
+                  <h3>Connect your money</h3>
+                  <p>
+                    Link via Mono or forward 3 SMS alerts. Kobo ingests 90 days
+                    of history and learns your salary rhythm, fixed costs, and
+                    spending velocity.
+                  </p>
+                </div>
+              </div>
+              <div class="how-step">
+                <div class="step-line"></div>
+                <div class="step-circle">2</div>
+                <div class="step-content">
+                  <h3>See 14 days ahead</h3>
+                  <p>
+                    Your personal cash flow forecast appears. Finally understand
+                    why you're always broke by the 25th — and what to do before
+                    it happens.
+                  </p>
+                </div>
+              </div>
+              <div class="how-step">
+                <div class="step-circle">3</div>
+                <div class="step-content">
+                  <h3>Act before it goes wrong</h3>
+                  <p>
+                    Payday auto-save. Subscription alerts 48 hours early. "Tight
+                    week ahead" warnings 3 days out. You stop reacting and start
+                    planning.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-visual reveal" style="transition-delay: 0.2s">
+            <div class="tv-header">
+              <span class="tv-title">Your 14-day forecast</span>
+              <span class="tv-badge">85%+ accuracy</span>
+            </div>
+            <div class="tv-body">
+              <div class="tv-bar-row">
+                <div class="tv-bar-label">Today</div>
+                <div class="tv-bar-track">
+                  <div class="tv-bar-fill green-fill" style="width: 88%"></div>
+                </div>
+                <div class="tv-bar-val">₦148k</div>
+              </div>
+              <div class="tv-bar-row">
+                <div class="tv-bar-label">Day 3</div>
+                <div class="tv-bar-track">
+                  <div class="tv-bar-fill green-fill" style="width: 72%"></div>
+                </div>
+                <div class="tv-bar-val">₦118k</div>
+              </div>
+              <div class="tv-bar-row">
+                <div class="tv-bar-label">Day 7</div>
+                <div class="tv-bar-track">
+                  <div class="tv-bar-fill gold-fill" style="width: 42%"></div>
+                </div>
+                <div class="tv-bar-val">₦70k</div>
+              </div>
+              <div class="tv-bar-row">
+                <div class="tv-bar-label">Day 10</div>
+                <div class="tv-bar-track">
+                  <div class="tv-bar-fill red-fill" style="width: 18%"></div>
+                </div>
+                <div class="tv-bar-val">₦29k</div>
+              </div>
+              <div class="tv-bar-row">
+                <div class="tv-bar-label">Day 14</div>
+                <div class="tv-bar-track">
+                  <div class="tv-bar-fill red-fill" style="width: 8%"></div>
+                </div>
+                <div class="tv-bar-val">₦12k</div>
+              </div>
+
+              <div class="tv-divider"></div>
+              <div class="tv-alert">
+                <div class="tv-alert-title">⚡ Kobo sees a problem</div>
+                At this rate you'll hit ₦12k by day 14 — 3 days before payday. 3
+                subscriptions renewing next week (₦18,200 total).
+              </div>
+              <div class="tv-prediction">
+                <div class="tv-pred-title">✅ Suggested action</div>
+                Pause DSTV + move Spotify to payday. Save ₦18k now = comfortable
+                week ahead.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features-section clear-section" id="features">
+      <div class="container">
+        <div class="reveal">
+          <div class="section-kicker">Features</div>
+          <h2>
+            Everything your salary<br />needs to <em>survive</em> the month.
+          </h2>
+        </div>
+
+        <div class="features-grid reveal" style="transition-delay: 0.15s">
+          <div class="feat-cell">
+            <div class="feat-icon-wrap">🔮</div>
+            <h3>Cash Flow Forecasting</h3>
+            <p>
+              Predicts your balance up to 14 days ahead using time-series AI
+              trained on your personal spending patterns and Nigerian salary
+              cycles.
+            </p>
+            <div class="feat-metric">
+              <strong>85%+</strong>Forecast accuracy
+            </div>
+          </div>
+          <div class="feat-cell">
+            <div class="feat-icon-wrap">💬</div>
+            <h3>Conversational AI</h3>
+            <p>
+              WhatsApp-style chat. Ask anything. Kobo responds in plain English
+              or Pidgin — warm, never shaming, always actionable.
+            </p>
+            <div class="feat-metric"><strong>24/7</strong>Always available</div>
+          </div>
+          <div class="feat-cell">
+            <div class="feat-icon-wrap">⚡</div>
+            <h3>Predictive Nudges</h3>
+            <p>
+              Right message, right time, before it's too late. "Tight week ahead
+              — pause subscriptions?" 3 days before you'd run out.
+            </p>
+            <div class="feat-metric"><strong>3 days</strong>Early warning</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="waitlist-section clear-section" id="waitlist">
+      <div class="waitlist-inner">
+        <div class="section-kicker reveal">Early Access</div>
+        <h2 class="reveal">No more <em>gbese</em><br />days before payday.</h2>
+        <div class="city-badges reveal">
+          <div class="city-badge">🇳🇬 Lagos</div>
+          <div class="city-badge">🇳🇬 Abuja</div>
+          <div class="city-badge">🇳🇬 Port Harcourt</div>
+          <div class="city-badge">🌍 Worldwide</div>
+        </div>
+        <p
+          class="section-body reveal"
+          style="text-align: center; margin: 0 auto 2.75rem"
+        >
+          Join 2,400+ African professionals on the waitlist. Be among the first
+          to experience predictive finance when we launch.
+        </p>
+
+        <form class="wl-form reveal" id="wlForm">
+          <input
+            type="email"
+            class="wl-email"
+            placeholder="Your email address"
+            required
+            id="wlEmail"
+          />
+          <button type="submit" class="wl-submit">Join Waitlist</button>
+        </form>
+        <div class="wl-trust reveal">
+          <span>🔐 Bank-level security</span>
+          <span>🚫 No spam</span>
+          <span>🇳🇬 Made in Lagos</span>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <a href="#" class="footer-logo">
+        <div class="footer-logo-mark">₦</div>
+        <span class="footer-logo-name">Kobo</span>
+      </a>
+      <div class="footer-links">
+        <a href="#">Twitter</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Instagram</a>
+        <a href="#">Privacy</a>
+      </div>
+      <p>© 2026 Kobo Finance Ltd. · Built for Africa.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
