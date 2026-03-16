@@ -240,6 +240,42 @@ nav.solid {
   transform: translateY(-1px);
 }
 
+/* Hamburger toggle (hidden on desktop) */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  z-index: 210;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--t1);
+  margin: 5px 0;
+  border-radius: 2px;
+  transition: transform .3s, opacity .3s;
+}
+
+.nav-toggle.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.nav-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+.nav-toggle.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Desktop: drawer just displays inline */
+.nav-drawer {
+  display: contents;
+}
+
+
 /* ── HERO ── */
 .hero {
   min-height: 100vh;
@@ -1864,10 +1900,54 @@ footer p {
 
 @media (max-width: 900px) {
   nav {
-    padding: 1.25rem 2rem;
+    padding: 1.25rem 1.5rem;
   }
-  .nav-center {
+
+  /* Show hamburger on mobile */
+  .nav-toggle {
+    display: block;
+  }
+
+  /* Mobile drawer: fullscreen overlay */
+  .nav-drawer {
     display: none;
+    position: fixed;
+    inset: 0;
+    top: 0;
+    background: rgba(8, 12, 10, 0.97);
+    backdrop-filter: blur(20px);
+    z-index: 199;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+  }
+
+  .nav-drawer.open {
+    display: flex;
+  }
+
+  .nav-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.75rem;
+  }
+
+  .nav-center a {
+    font-size: 1.2rem;
+    color: var(--t2);
+  }
+
+  .nav-right {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .nav-right .btn-kola {
+    padding: .85rem 2rem;
+    font-size: 1rem;
   }
 
   .hero {
