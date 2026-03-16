@@ -7,6 +7,25 @@ document.addEventListener("DOMContentLoaded", () => {
       .classList.toggle("solid", window.scrollY > 60);
   });
 
+  // Mobile hamburger menu toggle
+  const navToggle = document.getElementById('navToggle');
+  const navDrawer = document.getElementById('navDrawer');
+  if (navToggle && navDrawer) {
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('open');
+      navDrawer.classList.toggle('open');
+      document.body.style.overflow = navDrawer.classList.contains('open') ? 'hidden' : '';
+    });
+    // Close drawer when a link is clicked
+    navDrawer.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navToggle.classList.remove('open');
+        navDrawer.classList.remove('open');
+        document.body.style.overflow = '';
+      });
+    });
+  }
+
   // Scroll reveal animation
   const io = new IntersectionObserver(
     (entries) => {
